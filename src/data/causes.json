@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "slug": "first-aid-emergency-relief",
+    "list": {
+      "category": "Health",
+      "image": "/assets/img/service/FL.jpg",
+      "title": "First Aid & Emergency Relief",
+      "progress": 55,
+      "raised": 70,
+      "goal": 3000,
+      "author": "Miranda H.",
+      "delay": ".3s"
+    },
+    "details": {
+      "category": "Health",
+      "bannerImage": "/assets/img/service/FL.jpg",
+      "title": "First Aid & Emergency Relief Program",
+      "progress": 55,
+      "raised": 70,
+      "goal": 3000,
+      "description": "In response to the growing impact of natural disasters in the northern regions, Yaran e Khair has expanded its work to include First Aid and Emergency Relief Services for vulnerable communities affected by floods and other crises.",
+      "fullContent": [
+        "This initiative began recently but has already made a meaningful difference in both Gilgit and Chitral, where many families have been displaced, injured, or left without access to basic necessities. Our emergency support teams provide immediate first aid, helping stabilize individuals until proper medical help becomes accessible — especially crucial in remote and high-altitude areas where health facilities are limited or far away.",
+        "In addition to medical assistance, Yaran e Khair delivers essential relief supplies to affected households. Most recently, our team carried out a relief mission in the Talidas area of Gilgit, where we distributed food supplies, clothing, basic household utilities, hygiene items, and emergency essentials for families who lost their belongings.",
+        "By integrating first aid, relief distributions, and rapid response mobilization, Yaran e Khair is strengthening community resilience and providing a safety net for those who need help the most. Our team continues to monitor flood-prone and high-risk areas, stepping in whenever communities face emergencies or require urgent support."
+      ],
+      "goals": [
+        "Provide immediate first aid to disaster-affected families",
+        "Distribute food, clothing, and household essentials",
+        "Deploy rapid response teams to flood-prone areas",
+        "Support remote communities with limited healthcare access"
+      ],
+      "contentImages": [
+        "/assets/img/flood/1.jpg",
+        "/assets/img/flood/2.jpg"
+      ],
+      "sidebarGallery": [
+       "/assets/img/flood/3.jpg",
+        "/assets/img/flood/4.png"
+
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "slug": "career-counseling-student-facilitation",
+    "list": {
+      "category": "Education",
+      "image": "/assets/img/service/CC.jpeg",
+      "title": "Career Counseling & Student Facilitation",
+      "progress": 45,
+      "raised": 220,
+      "goal": 6000,
+      "author": "Miranda H.",
+      "delay": ".5s"
+    },
+    "details": {
+      "category": "Education",
+      "bannerImage": "/assets/img/service/CC.jpeg",
+      "title": "Career Counseling & Student Facilitation Program",
+      "progress": 45,
+      "raised": 220,
+      "goal": 6000,
+      "description": "At Yaran e Khair, we understand that many students — especially in remote or underserved areas — lack exposure to the wide range of educational and career opportunities available to them. To bridge this gap, we run our Career Counseling and Student Facilitation Program.",
+      "fullContent": [
+        "Through this program, we organize interactive sessions that introduce students to diverse career paths, scholarship opportunities, and professional development resources. These sessions are tailored to meet the specific needs of students from different educational backgrounds, helping them explore options they might not otherwise consider.",
+        "A unique aspect of this initiative is our student-led facilitation model. We reach out to motivated students from various institutions and invite them to join our outreach efforts. These peer facilitators accompany us to schools and communities, share their experiences, and provide practical support during sessions — giving participating students valuable leadership and mentoring experience.",
+        "By connecting learners with both professional guidance and peer mentors, Yaran e Khair ensures that students receive holistic support in planning their academic and career paths. Our goal is to empower students with knowledge, confidence, and inspiration so they can make choices that align with their aspirations and potential."
+      ],
+      "goals": [
+        "Introduce students to diverse career and scholarship opportunities",
+        "Organize interactive career counseling sessions",
+        "Build a student-led peer facilitation model",
+        "Empower students with knowledge, confidence, and direction"
+      ],
+      "contentImages": [
+        "/assets/img/career/1.jpg",
+      "/assets/img/career/2.jpg"
+      ],
+      "sidebarGallery": [
+        "/assets/img/career/1.jpg",
+      "/assets/img/career/2.jpg",
+        "/assets/img/career/3.jpg",
+      "/assets/img/career/4.jpg"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "slug": "education-for-everyone-scholarships",
+    "list": {
+      "category": "Education",
+      "image": "/assets/img/service/SCH.png",
+      "title": "Education for Everyone: Scholarships",
+      "progress": 70,
+      "raised": 70,
+      "goal": 3000,
+      "author": "Miranda H.",
+      "delay": ".7s"
+    },
+    "details": {
+      "category": "Education",
+      "bannerImage": "/assets/img/service/SCH.png",
+      "title": "Education for Everyone: Scholarship Program",
+      "progress": 70,
+      "raised": 70,
+      "goal": 3000,
+      "description": "Education for Everyone is one of Yaran e Khair's flagship initiatives, created with a single purpose: to ensure that every child, regardless of geography or financial background, has access to quality education and lifelong learning opportunities.",
+      "fullContent": [
+        "Through this program, we provide full and partial scholarships to students from economically disadvantaged households across Lower Chitral, Upper Chitral, and remote, hard-to-reach valleys. Our support covers monthly school fees, textbooks, transportation, meals, and in some cases safe housing — enabling students to focus entirely on their studies without the burden of financial stress.",
+        "At present, the program is supporting more than 10 students, but its impact extends far beyond the numbers. Many of our beneficiaries come from communities that are geographically isolated and underserved by mainstream educational systems. One of the most significant examples is our outreach in Shah Saleem, located in the Garamchashma Valley near the border, where children travel long distances just to reach basic schooling facilities.",
+        "Through our efforts, these students are brought to the main town where they are provided with secure shelter, nutritious food, educational supplies, and school enrollment support. Our Scholarship Program is built on the belief that no child's future should be determined by their zip code — education is the foundation of empowerment, mobility, and community transformation."
+      ],
+      "goals": [
+        "Provide full and partial scholarships to deserving students",
+        "Cover school fees, textbooks, transport, meals, and housing",
+        "Reach students in remote valleys like Garamchashma and Shah Saleem",
+        "Ensure sustained education in a safe and stable environment"
+      ],
+      "contentImages": [
+        "/assets/img/scholarship/1.png",
+        "/assets/img/scholarship/2.png"
+      ],
+      "sidebarGallery": [
+        "/assets/img/scholarship/1.png",
+        "/assets/img/scholarship/2.png",
+        "/assets/img/scholarship/3.jpg"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "slug": "bazm-e-yaran-comprehensive-sessions",
+    "list": {
+      "category": "Education",
+      "image": "/assets/img/service/BZY.JPG",
+      "title": "Bazm-e-Yaran: Comprehensive Sessions",
+      "progress": 90,
+      "raised": 1220,
+      "goal": 8000,
+      "author": "Miranda H.",
+      "delay": ".3s"
+    },
+    "details": {
+      "category": "Education",
+      "bannerImage": "/assets/img/service/BZY.JPG",
+      "title": "Bazm-e-Yaran: Comprehensive Session Program",
+      "progress": 90,
+      "raised": 1220,
+      "goal": 8000,
+      "description": "One of the highlights of Yaran e Khair is our Comprehensive Session Program, held in Garam Chashma, Lower Chitral. These sessions bring together multiple activities on a single platform to effectively support students and youth in education, mental health, personal development, and leadership skills.",
+      "fullContent": [
+        "The Bazm-e-Yaran (Circle of Friends) program brings together young people for sessions that nourish both mind and spirit. Mental Health Activities are designed to promote emotional well-being and resilience. Safe Reflection Activities encourage self-awareness and personal growth. Career Counseling Activities guide students toward educational and professional opportunities.",
+        "Self-Improvement Activities boost confidence and practical skills, while Democratic Activities cultivate community leadership and participatory thinking among youth. Each session blends all these elements on a single platform, creating a holistic growth experience that cannot be found anywhere else in the region.",
+        "This comprehensive session program equips students with knowledge, confidence, and practical experience, enabling them to thrive academically, grow personally, and contribute positively to their communities. Your contribution helps us expand to more villages and run more frequent sessions for greater impact."
+      ],
+      "goals": [
+        "Mental health awareness and emotional resilience",
+        "Career counseling and academic planning",
+        "Democratic leadership and community participation",
+        "Self-improvement, reflection, and confidence-building"
+      ],
+      "contentImages": [
+        "/assets/img/bazm/1.JPG",
+        "/assets/img/bazm/2.JPG"
+      ],
+      "sidebarGallery": [
+        "/assets/img/bazm/4.JPG",
+        "/assets/img/bazm/2.JPG",
+        "/assets/img/bazm/3.JPG",
+        "/assets/img/bazm/5.JPG"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "slug": "climate-awareness-disaster-preparedness",
+    "list": {
+      "category": "Health",
+      "image": "/assets/img/climate/2.JPG",
+      "title": "Climate Awareness & Disaster Preparedness",
+      "progress": 50,
+      "raised": 350,
+      "goal": 4000,
+      "author": "Miranda H.",
+      "delay": ".7s"
+    },
+    "details": {
+      "category": "Health",
+      "bannerImage": "/assets/img/climate/4.JPG",
+      "title": "Climate Awareness & Disaster Preparedness Program",
+      "progress": 50,
+      "raised": 350,
+      "goal": 4000,
+      "description": "At Yaran e Khair, we recognize the growing impact of climate change and natural disasters on vulnerable communities. We run climate-related initiatives that combine awareness, education, and proactive disaster preparedness.",
+      "fullContent": [
+        "Our climate awareness sessions educate communities about the environmental problems they are likely to face in the future and provide practical guidance on how to respond. Through interactive workshops and discussions, we help people understand climate risks, sustainable practices, and preventive measures to minimize the impact of natural hazards.",
+        "In addition to awareness, Yaran e Khair integrates disaster preparedness and first aid support into these initiatives. We train communities in basic first aid, emergency response, and safety measures so they are equipped to act quickly during crises — ensuring that people are not only informed but also prepared to protect themselves and their families.",
+        "By combining pre-planning, education, and emergency support, Yaran e Khair empowers communities to face climate challenges with knowledge, confidence, and resilience. Our goal is to create a culture of preparedness that reduces risk, saves lives, and strengthens the long-term sustainability of vulnerable regions."
+      ],
+      "goals": [
+        "Educate communities on climate risks and environmental changes",
+        "Train people in basic first aid and emergency response",
+        "Conduct interactive disaster preparedness workshops",
+        "Create a culture of resilience in vulnerable regions"
+      ],
+      "contentImages": [
+        "/assets/img/climate/1.JPG",
+        "/assets/img/climate/2.JPG"
+      ],
+      "sidebarGallery": [
+        "/assets/img/climate/4.JPG",
+        "/assets/img/climate/2.JPG",
+        "/assets/img/climate/3.JPG",
+        "/assets/img/climate/5.JPG"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "slug": "early-learning-primary-support",
+    "list": {
+      "category": "Education",
+      "image": "/assets/img/kids/1.jpg",
+      "title": "Early Learning & Primary Support Program",
+      "progress": 65,
+      "raised": 900,
+      "goal": 5000,
+      "author": "Miranda H.",
+      "delay": ".3s"
+    },
+    "details": {
+      "category": "Education",
+      "bannerImage": "/assets/img/kids/2.jpg",
+      "title": "Early Learning & Primary Support Program",
+      "progress": 65,
+      "raised": 900,
+      "goal": 5000,
+      "description": "At Yaran e Khair, we believe that the foundations of confidence, creativity, and lifelong learning are built during the earliest years of a child's education. We run a dedicated Early Learning & Primary Support Program for children below the age of 12 across various communities.",
+      "fullContent": [
+        "Through this initiative, our team organizes fun-learning sessions, interactive activities, and child-centered workshops that help young learners explore their abilities in a joyful, supportive environment. These sessions are designed to boost confidence, improve social skills, spark curiosity, and build positive learning habits from an early age.",
+        "As part of this program, Yaran e Khair provides essential learning materials to children who often cannot afford them — including school bags, storybooks, activity books, pencils, crayons, notebooks, and learning kits. These resources not only support academic growth but also give children a sense of pride and motivation toward education.",
+        "Our activities include storytelling sessions, creative arts and drawing, confidence-building games, group team play, motivational mini-sessions, and interactive learning puzzles. Each session aims to boost self-esteem, spark excitement about school, and help young children build a healthy emotional foundation for their future."
+      ],
+      "goals": [
+        "Organize fun-learning sessions for children under 12",
+        "Distribute school bags, books, and learning materials",
+        "Build confidence, creativity, and social skills",
+        "Create joyful learning spaces in underserved communities"
+      ],
+      "contentImages": [
+        "/assets/img/kids/1.jpg",
+        "/assets/img/kids/2.jpg"
+      ],
+      "sidebarGallery": [
+        "/assets/img/kids/1.jpg",
+        "/assets/img/kids/3.jpg",
+        "/assets/img/kids/4.jpg",
+        "/assets/img/kids/5.jpg"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "slug": "youth-leadership-development",
+    "list": {
+      "category": "Education",
+      "image": "/assets/img/leader/1.jpg",
+      "title": "Youth Leadership & Development Program",
+      "progress": 80,
+      "raised": 1600,
+      "goal": 7000,
+      "author": "Miranda H.",
+      "delay": ".5s"
+    },
+    "details": {
+      "category": "Education",
+      "bannerImage": "/assets/img/leader/2.png",
+      "title": "Youth Leadership & Development Program",
+      "progress": 80,
+      "raised": 1600,
+      "goal": 7000,
+      "description": "One of the core strengths of Yaran e Khair is that every system we run — every project, initiative, and contribution — is operated entirely by youth. Yaran e Khair is a fully youth-led organization, giving students from high schools, colleges, and universities a chance to take real responsibility beyond their textbooks.",
+      "fullContent": [
+        "Our members take on meaningful leadership positions such as president, vice president, media lead, editor, co-editor, core team member, manager, and community manager. These roles allow them to gain hands-on experience, manage teams, coordinate events, communicate with communities, and make decisions that have real-world impact.",
+        "Through these responsibilities, young people build confidence, learn teamwork, develop organizational and leadership skills, and understand how to manage projects in practical life. This exposure at an early stage helps them grow and prepares them for their future careers and endeavors.",
+        "By giving youth genuine leadership roles rather than token participation, Yaran e Khair is cultivating a new generation of capable, confident leaders who are already making a difference in their communities today — and will continue to do so tomorrow."
+      ],
+      "goals": [
+        "Provide real leadership roles to high school and university students",
+        "Build practical skills in management, communication, and teamwork",
+        "Develop confidence and responsibility in young leaders",
+        "Prepare students for professional careers through hands-on experience"
+      ],
+      "contentImages": [
+        "/assets/img/leader/2.png",
+        "/assets/img/leader/4.jpg"
+      ],
+      "sidebarGallery": [
+        "/assets/img/leader/3.png",
+        "/assets/img/leader/4.jpg",
+         "/assets/img/leader/5.jpeg",
+        "/assets/img/leader/6.jpeg"
+      ]
+    }
+  }
+]
