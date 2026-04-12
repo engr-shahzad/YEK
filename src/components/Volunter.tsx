@@ -26,27 +26,47 @@ const leadershipData = [
     image: "/assets/img/Co Founder/Shah Sarbaz.png",
     linkedin: "https://linkedin.com/in/shah-sarbaz",
   },
+  {
+    name: "Samavia Khan",
+    role: "Co lead of Bayan e Yaran.",
+    image: "/assets/img/Co Founder/sma.jpg",
+    linkedin: "#",
+  },
 ];
 
 // ─────────────────────────────────────────────
 // CORE TEAM  (sirf naam — no role)
 // ─────────────────────────────────────────────
 const coreTeamData = [
-  { name: "Haadi Butt",          image: "/assets/img/Core Team/Haadi Butt/Haadi Butt.png",                   linkedin: "https://www.linkedin.com/in/haadi-butt-485b81277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-  { name: "Joao Machado Velado Neto", image: "/assets/img/Core Team/Joao Machado Velado Neto/Joao Machado Velado Neto.png", linkedin: "#" },
-  { name: "Naila Sarwar",        image: "/assets/img/Core Team/Naila Sarwar/Naila Sarwar.png",               linkedin: "https://www.linkedin.com/in/naila-sarwar?utm_source=share_via&utm_content=profile&utm_medium=member_ios" },
-  { name: "Naveera Taj",         image: "/assets/img/Core Team/Naveera Taj/Naveera Taj.png",                 linkedin: "https://www.linkedin.com/in/naveera-taj-60b68b262?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
-  { name: "Shaukat Ali",         image: "/assets/img/Core Team/Shaukat Ali/Shaukat Ali.png",                 linkedin: "https://www.instagram.com/shouk_aly?igsh=Z2s5MXFmaWhxMXFw" },
+  { name: "Haadi Butt",          image: "/assets/img/Core Team/Haadi Butt/Haadi Butt.png",                   linkedin: "#" },
+  { name: "Joao Machado Velado", image: "/assets/img/Core Team/Joao Machado Velado Neto/Joao Machado Velado Neto.png", linkedin: "#" },
+  { name: "Naila Sarwar",        image: "/assets/img/Core Team/Naila Sarwar/Naila Sarwar.png",               linkedin: "#" },
+  { name: "Naveera Taj",         image: "/assets/img/Core Team/Naveera Taj/Naveera Taj.png",                 linkedin: "#" },
+  { name: "Shaukat Ali",         image: "/assets/img/Core Team/Shaukat Ali/Shaukat Ali.png",                 linkedin: "#" },
   { name: "Wasim Iqbal",         image: "/assets/img/Core Team/Wasim Iqbal/Wasim Iqbal.png",                 linkedin: "#" },
-  { name: "Zia Ullah",           image: "/assets/img/Core Team/Zia Ullah/Zia Ullah.png",                     linkedin: "http://linkedin.com/in/zia-ullah-b392292a3" },
+  { name: "Zia Ullah",           image: "/assets/img/Core Team/Zia Ullah/Zia Ullah.png",                     linkedin: "#" },
 ];
 
 // ─────────────────────────────────────────────
 // COMMUNITY LEADS  (naam + title dono)
 // ─────────────────────────────────────────────
 const communityLeadsData = [
-  { name: "Aziz Karim",   role: "Community Coordinator",     image: "/assets/img/volunter/lead1.jpg",  linkedin: "#" },
-
+  { name: "Aziz Karim",   role: "Community Coordinator",     image: "/assets/img/Community Coordinator/Aziz Karim/Aziz Karim (2).png",  linkedin: "#" },
+  { name: "Aniqa Sher",   role: "President Gilgit Wing",     image: "/assets/img/Gilgit Wing/President Gilgit Wing/Aniqa Sher.png",  linkedin: "https://www.linkedin.com/in/aniqa-sher-00b6b6336?utm_source=share_via&utm_content=profile&utm_medium=member_ios" },
+{ name: "Zeeshan Wali",   role: "Vice President Gilgit Wing",     image: "/assets/img/Gilgit Wing/Vice President Gilgit Wing/Zeeshan Wali.png",  linkedin: "https://www.linkedin.com/in/zeeshan-wali-6455b9361/" },
+{ name: "Shehram Ahmad",   role: "President Chitral Wing",     image: "/assets/img/Chitral Wing/President Chitral Wing/shehram Ahmad.png",  linkedin: "https://www.linkedin.com/in/shehram-ahmad-16b317367/" },
+{ name: "Muhammad Abdullah Farid",   role: "Vice President Chitral Wing (Lower)",     image: "/assets/img/Chitral Wing/Vice President Chitral Wing (Lower)/Muhammad Abdullah Farid.png",  linkedin: "http://linkedin.com/in/muhammad-abdullah-farid-38a12b2a0" },
+{ name: "Aliya Jabeen",   role: "Vice President Chitral Wing (Upper)",     image: "/assets/img/Chitral Wing/Vice President Chitral Wing (Upper)/Aliya Jabeen.png",  linkedin: "#" },
+{ name: "Faiza Batool",   role: "Media Lead",     image: "/assets/img/Media Team/Media Lead/Faiza Batool.png",  linkedin: "https://www.linkedin.com/in/faiza-b-229839263/" },
+{ name: "Syeda Diana Ali Shah",   role: "Media Co Lead",     image: "/assets/img/Media Team/Media co Lead/Diana.png",  linkedin: "#" },
+{ name: "Fizza Khan",   role: "Lead Life on Land Project",     image: "/assets/img/Lead Life on Land Project/Fizza Khan.png",  linkedin: "https://pk.linkedin.com/in/fizza-khan-043689246" },
+{ name: "Niba Ali",   role: "Co Lead Life on Land Project",     image: "/assets/img/Lead Life on Land Project/Niba Ali.png",  linkedin: "#" },
+{ name: "Kamran Qurban",   role: "Lead Climate Action GB",     image: "/assets/img/Community Leads/Climate Action/climate action lead gb/kamran Qurban.png",  linkedin: "#" },
+{ name: "Saqlain Ahmed",   role: "Lead Climate Action Chitral",     image: "/assets/img/Climate Action/Lead Climate Action lead chitral Project/Saqlain Ahmed.png",  linkedin: "#" },
+{ name: "Naghma Hamid",   role: "Co Lead Climate Action Chitral",     image: "/assets/img/Community Leads/Climate Action/Co-lead Climate Action chitral/Naghma Hamid.png",  linkedin: "https://www.linkedin.com/in/naghma-hamid-111madaklasht" },
+{ name: "Aleena Yousuf",   role: "Lead Bayan e Yaran",     image: "/assets/img/Chitral Wing/TBD.png",  linkedin: "https://www.linkedin.com/in/aleenayousuf44?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+{ name: "TBD",   role: "Lead Archival Project",     image: "/assets/img/Chitral Wing/TBD.png",  linkedin: "#" },
+{ name: "TBD",   role: "Co Lead Archival Project",     image: "/assets/img/Chitral Wing/TBD.png",  linkedin: "#" },
 ];
 
 // ─────────────────────────────────────────────
