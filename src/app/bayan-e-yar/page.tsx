@@ -44,7 +44,8 @@ const PdfThumbnail = ({ pdfUrl }: { pdfUrl: string }) => {
         canvas.width = viewport.width;
         canvas.height = viewport.height;
 
-        await page.render({ canvasContext: ctx, viewport }).promise;
+        // ✅ FIX: canvas property added
+        await page.render({ canvasContext: ctx, viewport, canvas }).promise;
         if (!cancelled) setLoading(false);
       } catch {
         if (!cancelled) { setError(true); setLoading(false); }
@@ -390,8 +391,6 @@ const NewsletterPage = () => {
           width: 100%;
         }
       `}</style>
-
-
 
       <section className="section-padding" style={{ background: "#f7fbf8" }}>
         <div className="container">
