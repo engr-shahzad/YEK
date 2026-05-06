@@ -24,8 +24,10 @@ const chelsea_market = Chelsea_Market({
 
 export const metadata: Metadata = {
   title: "Yaaran e khair",
-  description:
-    "yaaran e khair",
+  description: "yaaran e khair",
+  icons: {
+    icon: "/YEK.ico",
+  },
 };
 
 export default function RootLayout({
