@@ -9,7 +9,6 @@ import "@css/main.css";
 import type { Metadata } from "next";
 import { Chelsea_Market, DM_Sans } from "next/font/google";
 import "./globals.css";
-import Preloader from "@/layout/Preloader";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -47,7 +46,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`${chelsea_market.variable} ${dmSans.variable}`}>
-        <Preloader />
         {children}
       </body>
     </html>
