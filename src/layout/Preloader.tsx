@@ -31,39 +31,11 @@ const Preloader = () => {
         transition: "opacity 600ms ease-in-out",
       }}
     >
-      <div className="animation-preloader">
-        <div className="spinner"></div>
-        <div className="txt-loading">
-          {["Y", "E", "K"].map((letter, index) => (
-            <span
-              key={index}
-              data-text-preloader={letter}
-              className="letters-loading"
-              style={{
-                animationDelay: `${index * 0.1}s`,
-              }}
-            >
-              {letter}
-            </span>
-          ))}
-        </div>
-        <p className="text-center">Loading</p>
-      </div>
-      <div className="loader">
-        <div className="row">
-          <div className="col-3 loader-section section-left">
-            <div className="bg" />
-          </div>
-          <div className="col-3 loader-section section-left">
-            <div className="bg" />
-          </div>
-          <div className="col-3 loader-section section-right">
-            <div className="bg" />
-          </div>
-          <div className="col-3 loader-section section-right">
-            <div className="bg" />
-          </div>
-        </div>
+      <div className="animation-preloader" style={{ textAlign: "center" }}>
+        <h2 style={{ color: "#fff", fontSize: "28px", fontWeight: "bold", marginBottom: "12px" }}>
+          Yaran e Khair.org
+        </h2>
+        <p style={{ color: "#ccc", fontSize: "16px" }}>Loading</p>
       </div>
     </div>
   );
