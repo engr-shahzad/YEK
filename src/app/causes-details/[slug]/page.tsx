@@ -181,8 +181,8 @@ const CausesDetailsPage = async ({
                     className="sidebar-promo-widgets bg-cover text-white text-center"
                     style={{ backgroundImage: 'url("/assets/img/causes/cause1.jpg")' }}
                   >
-                    <span>Call To Action</span>
-                    <h3>There are no secrets to success</h3>
+                    <span>Join Our Mission</span>
+                    <h3>Together We Can Make a Difference</h3>
                     <Link href="/contact" className="theme-btn">
                       Get In Touch
                     </Link>
