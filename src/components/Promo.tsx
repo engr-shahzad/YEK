@@ -223,7 +223,7 @@ export const Promo3 = () => {
     delay: string;
   }[] = [
     {
-      title: "Make Donation",
+      title: "Donate",
       description:
         "The Spring is a passionate and determined group of monthly givers on a mission",
       icon: "/assets/img/hand.png",

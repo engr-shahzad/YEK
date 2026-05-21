@@ -29,7 +29,7 @@ const Footer1 = () => {
               className="col-xl-3 col-lg-4 col-md-6 ps-lg-5  wow fadeInUp"
               data-wow-delay=".4s"
             >
-              <LinksCol heading="Useful Link" links={usefulLink} />
+              <LinksCol heading="Useful Links" links={usefulLink} />
             </div>
             <div
               className="col-xl-3 col-lg-4 col-md-6 ps-lg-5  wow fadeInUp"
@@ -81,7 +81,7 @@ const Footer1 = () => {
         <div className="container">
           <div className="footer-wrapper">
             <p className="wow fadeInUp text-center" data-wow-delay=".3s">
-              © <Link href="/">Yaraan e khair</Link> Community - 2024. All rights
+              © <Link href="/">Yaran e Khair</Link> Community - 2024. All rights
               reserved.
             </p>
           </div>
@@ -101,7 +101,7 @@ const Footer2 = () => {
               className="col-xl-3 col-lg-4 col-md-6 ps-lg-5  wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <LinksCol heading="Useful Link" links={usefulLink} />
+              <LinksCol heading="Useful Links" links={usefulLink} />
             </div>
             <div
               className="col-xl-3 col-lg-4 col-md-6 ps-lg-5  wow fadeInUp"
@@ -167,7 +167,7 @@ const Footer2 = () => {
         <div className="container">
           <div className="footer-bottom-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInLeft" data-wow-delay=".3s">
-              © Copyright 2026 <Link href="/">Yareen e khair</Link>. All Rights
+              © Copyright 2026 <Link href="/">Yaran e Khair</Link>. All Rights
               Reserved.
             </p>
             <div className="card-image wow fadeInRight" data-wow-delay=".5s">
@@ -285,7 +285,7 @@ const Footer3 = () => {
         <div className="container">
           <div className="footer-wrapper">
             <p className="wow fadeInUp text-center" data-wow-delay=".3s">
-              © <Link href="/">Yaraan e khair</Link> Cummunity - 2026 All rights
+              © <Link href="/">Yaran e Khair</Link> Community - 2026. All rights
               reserved.
             </p>
           </div>
@@ -550,7 +550,7 @@ const LinksCol = ({
         {links.map((e, i) => (
           <li key={i}>
             <a href={e.link}>
-              {layout == 1 && <i className="far fa-chevron-double-right" />}
+              {layout == 1 && <i className="fas fa-angles-right" />}
               {e.text}
             </a>
           </li>
@@ -566,7 +566,7 @@ const usefulLink = [
   { link: "team", text: "Our Volunteers" },
 ];
 const legalLink = [
-  { link: "contact", text: "Term of use" },
+  { link: "contact", text: "Terms of Use" },
   { link: "contact", text: "Privacy Policy" },
   { link: "contact", text: "Contact Us" },
 ];

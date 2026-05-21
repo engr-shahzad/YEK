@@ -139,7 +139,7 @@ const Header2 = ({ open }: { open: () => void }) => (
             <div className="header-right d-flex justify-content-end align-items-center">
               <div className="author-icon">
                 <div className="icon">
-                  <i className="fa fa-regular fa-phone" />
+                  <i className="fas fa-phone" />
                 </div>
                 <div className="content">
                   <span>Call Us Now</span>
@@ -173,7 +173,7 @@ const Nav = () => (
     <nav id="mobile-menu">
       <ul>
       <li>
-            <Link href="/bayan-e-yar">Bayan e Yaran</Link>
+            <Link href="/bayan-e-yaran">Bayan e Yaran</Link>
           </li>
         <li>
           <Link href="/about">About Us</Link>
@@ -229,7 +229,7 @@ const MobileMenu = ({ open, close }: { open: boolean; close: () => void }) => (
                     text: "Mod-friday, 09am -05pm",
                   },
                   {
-                    icon: "far fa-phone",
+                    icon: "fas fa-phone",
                     link: "tel:+11002345909",
                     text: "+11002345909",
                   },
@@ -288,7 +288,7 @@ const MobileNav = () => (
       <nav className="mean-nav">
         <ul>
         <li>
-            <Link href="/bayan-e-yar">Bayan e Yaar</Link>
+            <Link href="/bayan-e-yaran">Bayan e Yaran</Link>
           </li>
           <li>
             <Link href="/about">About Us</Link>

@@ -78,10 +78,6 @@ export const Team1 = () => {
     <section className="team-section fix section-padding">
       <div className="container">
         <div className="section-title text-center">
-          <span className="sub-title color-2 wow fadeInUp">
-            <i className="far fa-heart" />
-            Best Team
-          </span>
           <h2 className="mt-char-animation">Our Team</h2>
         </div>
       </div>

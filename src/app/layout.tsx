@@ -24,8 +24,8 @@ const chelsea_market = Chelsea_Market({
 });
 
 export const metadata: Metadata = {
-  title: "Yaaran e khair",
-  description: "yaaran e khair",
+  title: "Yaran e Khair",
+  description: "yaran e khair",
   icons: {
     icon: "/YEK.ico",
   },
@@ -38,6 +38,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${chelsea_market.variable} ${dmSans.variable}`}>
         {children}
       </body>

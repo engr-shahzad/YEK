@@ -488,11 +488,11 @@ input.main-search-input::placeholder {
 
 .scroll-up::after {
   position: absolute;
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome 6 Free";
   content: "\f176";
   text-align: center;
   line-height: 50px;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 18px;
   color: var(--theme-2);
   left: 0;
@@ -1684,7 +1684,16 @@ input.main-search-input::placeholder {
   }
 }
 .header-4 .header-main .sidebar__toggle {
-  color: var(--white);
+  color: var(--header);
+  font-size: 26px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
 }
 .header-4 .header-right {
   display: flex;

@@ -1,0 +1,133 @@
+/* Font Awesome 6 - Local font files */
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/fonts/fa-solid-900.woff2") format("woff2"),
+       url("/assets/fonts/fa-solid-900.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/fonts/fa-regular-400.woff2") format("woff2"),
+       url("/assets/fonts/fa-regular-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/fonts/fa-brands-400.woff2") format("woff2"),
+       url("/assets/fonts/fa-brands-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("/assets/fonts/fa-light-300.woff2") format("woff2"),
+       url("/assets/fonts/fa-light-300.ttf") format("truetype");
+}
+
+.fa,
+.fas,
+.far,
+.fab,
+.fal,
+.fa-solid,
+.fa-regular,
+.fa-brands,
+.fa-light {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fas,
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.far,
+.fa-regular {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+.fab,
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+.fal,
+.fa-light {
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 300;
+}
+
+/* Icon unicode definitions */
+.fa-bars:before { content: "\f0c9"; }
+.fa-times:before, .fa-xmark:before { content: "\f00d"; }
+.fa-heart:before { content: "\f004"; }
+.fa-phone:before { content: "\f095"; }
+.fa-envelope:before { content: "\f0e0"; }
+.fa-map-marker-alt:before, .fa-location-dot:before { content: "\f3c5"; }
+.fa-clock:before { content: "\f017"; }
+.fa-calendar-alt:before, .fa-calendar-days:before { content: "\f073"; }
+.fa-plus:before { content: "\f067"; }
+.fa-minus:before { content: "\f068"; }
+.fa-search:before, .fa-magnifying-glass:before { content: "\f002"; }
+.fa-chair:before { content: "\f6c0"; }
+.fa-long-arrow-left:before, .fa-arrow-left-long:before, .fa-left-long:before { content: "\f177"; }
+.fa-long-arrow-right:before, .fa-arrow-right-long:before, .fa-right-long:before { content: "\f178"; }
+.fa-arrow-right:before { content: "\f061"; }
+.fa-arrow-left:before { content: "\f060"; }
+.fa-donate:before, .fa-hand-holding-dollar:before { content: "\f4b9"; }
+.fa-pen:before { content: "\f304"; }
+.fa-comments:before { content: "\f086"; }
+.fa-tag:before { content: "\f02b"; }
+.fa-reply:before { content: "\f3e5"; }
+.fa-briefcase:before { content: "\f0b1"; }
+.fa-user:before { content: "\f007"; }
+.fa-map:before { content: "\f279"; }
+.fa-home:before, .fa-house:before { content: "\f015"; }
+.fa-share-alt:before, .fa-share-nodes:before { content: "\f1e0"; }
+.fa-chevron-right:before { content: "\f054"; }
+.fa-chevron-left:before { content: "\f053"; }
+.fa-angles-right:before, .fa-chevron-double-right:before { content: "\f101"; }
+.fa-angles-left:before, .fa-chevron-double-left:before { content: "\f100"; }
+.fa-check:before { content: "\f00c"; }
+.fa-times-circle:before, .fa-circle-xmark:before { content: "\f057"; }
+.fa-play:before { content: "\f04b"; }
+.fa-quote-left:before { content: "\f10d"; }
+.fa-star:before { content: "\f005"; }
+.fa-star-half:before { content: "\f089"; }
+.fa-star-half-alt:before, .fa-star-half-stroke:before { content: "\f5c0"; }
+
+/* Brand icons */
+.fa-facebook-f:before { content: "\f39e"; }
+.fa-twitter:before { content: "\f099"; }
+.fa-linkedin-in:before { content: "\f0e1"; }
+.fa-youtube:before { content: "\f167"; }
+.fa-instagram:before { content: "\f16d"; }
+.fa-whatsapp:before { content: "\f232"; }
+.fa-vimeo-v:before { content: "\f27d"; }
+.fa-pinterest-p:before { content: "\f231"; }
+.fa-facebook:before { content: "\f09a"; }
+.fa-linkedin:before { content: "\f08c"; }
+.fa-tiktok:before { content: "\e07b"; }
+.fa-arrow-up:before { content: "\f176"; }
+.fa-arrow-down:before { content: "\f175"; }

@@ -7,10 +7,10 @@ export const Donate1 = () => {
             <div className="section-title">
               <span className="sub-title text-white wow fadeInUp">
                 <i className="far fa-heart" />
-                Make Donation
+                Donate
               </span>
               <h2 className="mt-char-animation text-white" data-wow-delay=".3s">
-              Support Yaraan e khair sociaty
+              Support Yaran e Khair Community
               </h2>
             </div>
           </div>
