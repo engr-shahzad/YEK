@@ -48,10 +48,6 @@ const Footer1 = () => {
                 <div className="popularspost-area">
       
                   <div className="single-post-items">
-                    <div
-                      className="post-img bg-cover"
-                      style={{ backgroundImage: 'url("assets/img/post2.jpg")' }}
-                    />
                     <div className="post-content">
                       <h5>
                         <Link href="/contact">

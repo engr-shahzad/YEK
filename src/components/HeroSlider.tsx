@@ -18,14 +18,14 @@ export const HeroSlider1 = () => {
   }[] = [
     {
       img: "assets/img/hero/banner.jpg",
-      mission: "Education,Rural Development, Healthcare",
+      mission: "Education,Healthcare,Rural Development and Climate Change.",
       h1: "We’re On A Mission \n To Change World",
       video: "https://www.youtube.com/watch?v=p6DV1qL5UcM",
       delays: { h5: "1.3s", h1: "1.5s", buttons: "1.7s", video: "1.5s" },
     },
     {
       img: "assets/img/hero/banner.jpg",
-      mission: "Education,Rural Development, Healthcare",
+      mission: "Education,Healthcare,Rural Development and Climate Change.",
       h1: "We’re On A Mission \n To Change World",
       video: "https://www.youtube.com/watch?v=p6DV1qL5UcM",
       delays: { h5: "1.3s", h1: "1.5s", buttons: "1.7s", video: "1.5s" },
@@ -123,7 +123,7 @@ export const HeroSlider3 = () => {
   }[] = [
     {
       img: "assets/img/hero/hero-1.jpg",
-      mission: "Education,Rural Development, Healthcare",
+      mission: "Education,Healthcare,Rural Development and Climate Change.",
       h1: "We’re On A Mission To Change That",
       delays: { h5: "1.3s", h1: "1.5s", buttons: "1.7s" },
       links: { causes: "causes", donate: "donation-details" },
@@ -221,14 +221,14 @@ export const HeroSlider4 = () => {
   }[] = [
     {
       img: "assets/img/hero/hero-3.jpg",
-      mission: "Education,Rural Development, Healthcare",
+      mission: "Education,Healthcare,Rural Development and Climate Change.",
       h1: "More charity. Make More \n better life.",
       delays: { h5: "1.3s", h1: "1.5s", buttons: "1.7s" },
       links: { causes: "causes", donate: "donation-details" },
     },
     {
       img: "assets/img/hero/hero-4.jpg",
-      mission: "Education,Rural Development, Healthcare",
+      mission: "Education,Healthcare,Rural Development and Climate Change.",
       h1: "More charity. Make More \n better life.",
       delays: { h5: "1.3s", h1: "1.5s", buttons: "1.7s" },
       links: { causes: "causes", donate: "donation-details" },

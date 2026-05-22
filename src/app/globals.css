@@ -25,8 +25,20 @@
 .event-title-top {
   max-width: 450px;
 }
+.section-title h2 {
+  text-transform: none !important;
+}
+
 .faq-content .accordion-item .accordion-header .accordion-button {
   line-height: normal;
+}
+.faq-content .accordion-item .accordion-header .accordion-button::after {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+.faq-content .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
 }
 
 /* image popup */
