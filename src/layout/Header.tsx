@@ -108,13 +108,13 @@ const Header2 = ({ open }: { open: () => void }) => (
             items={[
               {
                 icon: "fal fa-map-marker-alt",
-                content: "Main Street, Melbourne, Australia",
+                content: "Garamchashma, District Lower Chitral",
               },
               {
                 icon: "far fa-envelope",
                 content: (
-                  <a href="mailto:info@example.com" className="link">
-                    info@example.com
+                  <a href="mailto:yaranekhairngo@gmail.com" className="link">
+                    yaranekhairngo@gmail.com
                   </a>
                 ),
               },
@@ -144,7 +144,7 @@ const Header2 = ({ open }: { open: () => void }) => (
                 <div className="content">
                   <span>Call Us Now</span>
                   <h5>
-                    <a href="tel:+2085550112">+000 (123) 456 88</a>
+                    <a href="tel:03359834070">03359834070</a>
                   </h5>
                 </div>
               </div>
@@ -173,7 +173,7 @@ const Nav = () => (
     <nav id="mobile-menu">
       <ul>
       <li>
-            <Link href="/bayan-e-yaran">Bayan e Yaran</Link>
+            <Link href="/bayan-e-yaran" style={{ textTransform: "none" }}>Bayan e Yaran</Link>
           </li>
         <li>
           <Link href="/about">About Us</Link>
@@ -216,22 +216,17 @@ const MobileMenu = ({ open, close }: { open: boolean; close: () => void }) => (
                   {
                     icon: "fal fa-map-marker-alt",
                     link: "#",
-                    text: "Main Street, Melbourne, Australia",
+                    text: "Garamchashma, District Lower Chitral",
                   },
                   {
                     icon: "fal fa-envelope",
-                    link: "mailto:info@azent.com",
-                    text: "info@example.com",
-                  },
-                  {
-                    icon: "fal fa-clock",
-                    link: "#",
-                    text: "Mod-friday, 09am -05pm",
+                    link: "mailto:yaranekhairngo@gmail.com",
+                    text: "yaranekhairngo@gmail.com",
                   },
                   {
                     icon: "fas fa-phone",
-                    link: "tel:+11002345909",
-                    text: "+11002345909",
+                    link: "tel:03359834070",
+                    text: "03359834070",
                   },
                 ].map((item, i) => (
                   <li key={i} className="d-flex align-items-center">
@@ -288,7 +283,7 @@ const MobileNav = () => (
       <nav className="mean-nav">
         <ul>
         <li>
-            <Link href="/bayan-e-yaran">Bayan e Yaran</Link>
+            <Link href="/bayan-e-yaran" style={{ textTransform: "none" }}>Bayan e Yaran</Link>
           </li>
           <li>
             <Link href="/about">About Us</Link>

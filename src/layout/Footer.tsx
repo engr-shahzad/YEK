@@ -45,25 +45,37 @@ const Footer1 = () => {
                 <div className="widget-head">
                   <h4 className="text-white">Contact Us</h4>
                 </div>
-                <div className="popularspost-area">
-      
-                  <div className="single-post-items">
-                    <div className="post-content">
-                      <h5>
-                        <Link href="/contact">
-                          Whatsapp:
-                        </Link>
-                      </h5>
-                      <h5>
-                      <Link href="/contact">
-                          Contact:
-                        </Link>
-                      </h5>
-                      <h5>
-                      <Link href="/contact">
-                          Address:
-                        </Link>
-                      </h5>
+                <div className="footer-content">
+                  <div className="contact-info-area">
+                    <div className="contact-items">
+                      <div className="icon">
+                        <i className="fal fa-map-marker-alt" />
+                      </div>
+                      <div className="content">
+                        <h6 style={{ color: "#ccc" }}>Garamchashma, District Lower Chitral</h6>
+                      </div>
+                    </div>
+                    <div className="contact-items">
+                      <div className="icon color-2">
+                        <i className="fal fa-envelope" />
+                      </div>
+                      <div className="content">
+                        <h6>
+                          <a href="mailto:yaranekhairngo@gmail.com" className="link" style={{ color: "#ccc" }}>
+                            yaranekhairngo@gmail.com
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="contact-items">
+                      <div className="icon color-3">
+                        <i className="fal fa-phone" />
+                      </div>
+                      <div className="content">
+                        <h6>
+                          <a href="tel:03359834070" style={{ color: "#ccc" }}>03359834070</a>
+                        </h6>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -121,8 +133,7 @@ const Footer2 = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="tel:00012345688">+000 (123) 456 88</a>
-                          <a href="tel:00012345688">+000 (123) 456 88</a>
+                          <a href="tel:03359834070">03359834070</a>
                         </h6>
                       </div>
                     </div>
@@ -132,11 +143,8 @@ const Footer2 = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="mailto:info@example.com" className="link">
-                            info@example.com
-                          </a>
-                          <a href="mailto:jobs@example.com" className="link">
-                            jobs@example.com
+                          <a href="mailto:yaranekhairngo@gmail.com" className="link">
+                            yaranekhairngo@gmail.com
                           </a>
                         </h6>
                       </div>
@@ -147,8 +155,7 @@ const Footer2 = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          55 Main Street, 2nd block <br />
-                          Malborne, Australia
+                          Garamchashma, District Lower Chitral
                         </h6>
                       </div>
                     </div>
@@ -204,8 +211,7 @@ const Footer3 = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="tel:00012345688">+000 (123) 456 88</a>
-                          <a href="tel:00012345688">+000 (123) 456 88</a>
+                          <a href="tel:03359834070">03359834070</a>
                         </h6>
                       </div>
                     </div>
@@ -215,11 +221,8 @@ const Footer3 = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          <a href="mailto:info@example.com" className="link">
-                            info@example.com
-                          </a>
-                          <a href="mailto:jobs@example.com" className="link">
-                            jobs@example.com
+                          <a href="mailto:yaranekhairngo@gmail.com" className="link">
+                            yaranekhairngo@gmail.com
                           </a>
                         </h6>
                       </div>
@@ -230,8 +233,7 @@ const Footer3 = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          55 Main Street, 2nd block <br />
-                          Malborne, Australia
+                          Garamchashma, District Lower Chitral
                         </h6>
                       </div>
                     </div>
@@ -327,7 +329,7 @@ const Footer4 = () => {
                     <div className="contact">
                       <h4>Email Address</h4>
                       <p>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                        <a href="mailto:yaranekhairngo@gmail.com">yaranekhairngo@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -339,7 +341,7 @@ const Footer4 = () => {
                     <div className="contact">
                       <h4>Phone Number</h4>
                       <p>
-                        <a href="tel:98098709809">980-987-098-09</a>
+                        <a href="tel:03359834070">03359834070</a>
                       </p>
                     </div>
                   </div>
