@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
 
 const Faq = () => {
@@ -72,37 +71,12 @@ export const Faq1 = () => {
               <Faq />
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="faq-image-items-2">
-                <Image
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                  src="/assets/img/faq/one.jpg"
-                  alt="Volunteers helping community members"
-                  className="faq-img"
-                />
-                <div className="faq-image-2">
-                  <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    src="/assets/img/faq/two.jpeg"
-                    alt="Charity program participants smiling"
-                  />
-                </div>
-                <div className="faq-image-3">
-                  <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    src="/assets/img/faq/three.jpg"
-                    alt="Community members receiving support"
-                  />
-                </div>
-              </div>
+              <div
+                className="faq-image-single bg-cover"
+                style={{ backgroundImage: 'url("/assets/img/faq/one.jpg")' }}
+                role="img"
+                aria-label="Volunteers helping community members"
+              />
             </div>
           </div>
         </div>

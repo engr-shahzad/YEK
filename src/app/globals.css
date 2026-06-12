@@ -1,3 +1,129 @@
+/* ============================================================
+   Design System — Color Palette
+   Deep teal-green primary, warm amber accent, soft gold,
+   brand-tinted dark for headings & dark sections.
+   ============================================================ */
+:root {
+  --theme: #1a685b;
+  --theme-2: #f4a23c;
+  --theme-3: #ffd166;
+  --header: #16302a;
+  --text: #5c6b66;
+  --border: #e4ede7;
+  --bg: #f7fbf8;
+  --ratting: #ffd166;
+}
+
+/* ============================================================
+   Design System — Typography
+   Thinner weights for a cleaner, more minimalist look.
+   ============================================================ */
+body {
+  font-weight: 300;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+p {
+  font-weight: 300;
+}
+
+/* Toned-down heading scale - the default 80px/60px felt oversized
+   and odd at the new thin weight. */
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 46px;
+}
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
+
+/* Hero heading - rescaled to match the smaller h1 default */
+.hero-4 .hero-content h1 {
+  font-size: 56px;
+}
+@media (max-width: 1199px) {
+  .hero-4 .hero-content h1 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-4 .hero-content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-4 .hero-content h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-4 .hero-content h1 {
+    font-size: 30px;
+  }
+}
+
+/* ============================================================
+   Design System — Buttons
+   Slimmer padding, tighter radius, no forced min-width.
+   ============================================================ */
+.theme-btn,
+.theme-btn.transparent-btn,
+.theme-btn.transparent-btn-2 {
+  padding: 14px 32px;
+  min-width: auto;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+}
+.theme-btn.transparent-btn,
+.theme-btn.transparent-btn-2 {
+  border-width: 1.5px;
+}
+@media (max-width: 767px) {
+  .theme-btn,
+  .theme-btn.transparent-btn,
+  .theme-btn.transparent-btn-2 {
+    padding: 13px 28px;
+  }
+}
+@media (max-width: 575px) {
+  .theme-btn,
+  .theme-btn.transparent-btn,
+  .theme-btn.transparent-btn-2 {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
 
 .mean-expand {
   font-size: 18px !important;
@@ -112,6 +238,84 @@ img.mfp-img {
 }
 .contact-info-card h6 a:hover {
   color: var(--theme-2);
+}
+
+/* Page banner: branded color background, vertically centered content */
+.breadcrumb-wrapper {
+  background: linear-gradient(135deg, var(--theme) 0%, var(--header) 100%);
+}
+.breadcrumb-wrapper::before {
+  display: none;
+}
+.breadcrumb-wrapper .page-heading {
+  align-items: center;
+}
+.breadcrumb-wrapper.section-padding {
+  padding: 200px 0 100px;
+}
+
+/* FAQ section: single background image instead of the stacked layered images */
+.faq-image-single {
+  width: 100%;
+  height: 480px;
+  border-radius: 8px;
+}
+@media (max-width: 991px) {
+  .faq-image-single {
+    height: 380px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .faq-image-single {
+    height: 280px;
+  }
+}
+
+/* Global image rounding - consistent across the whole site */
+img {
+  border-radius: 8px;
+}
+
+/* About section: right-side images together match left image's height */
+.about-wrapper-3 .about-image-items-2 .about-image,
+.about-wrapper-3 .about-image-items-2 .about-img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.about-wrapper-3 .about-image-items-2 .about-img {
+  height: 241px;
+}
+.about-wrapper-3 .about-image-items-2 .about-img:first-child {
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .about-wrapper-3 .about-image-items-2 .about-img {
+    height: 215px;
+  }
+}
+@media (max-width: 575px) {
+  .about-wrapper-3 .about-image-items-2 .about-img {
+    height: 165px;
+  }
+}
+
+/* Project details sidebar: enlarge gallery thumbnails into a 2-column grid */
+.causes-details-wrapper .casues-sidebar-wrapper .single-sidebar-widgets .causue-gallery-wid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.causes-details-wrapper .casues-sidebar-wrapper .single-sidebar-widgets .single-cause-img {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 8px;
+}
+@media (max-width: 575px) {
+  .causes-details-wrapper .casues-sidebar-wrapper .single-sidebar-widgets .single-cause-img {
+    height: 120px;
+  }
 }
 
 /* Contact page: make form inputs visibly bordered */

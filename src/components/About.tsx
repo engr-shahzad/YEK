@@ -11,25 +11,25 @@ export const About1 = () => {
             <div className="col-lg-6">
               <div className="about-image-items-2">
                 <div className="row g-4 align-items-center">
-                  <div className="col-lg-7 wow fadeInUp" data-wow-delay=".3s">
+                  <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                     <div className="about-image">
                       <Image
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: "100%", height: "100%" }}
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
                         src="/assets/img/about/kids1.jpg"
                         alt="Children supported by Yaran e Khair"
                       />
                     </div>
                   </div>
-                  <div className="col-lg-5 wow fadeInUp" data-wow-delay=".5s">
+                  <div className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                   <div className="about-img">
                       <Image
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                  src="/assets/img/bazm/1.JPG"
                         alt="Yaran e Khair community gathering event"
                       />
@@ -39,7 +39,7 @@ export const About1 = () => {
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                  src="/assets/img/about/mental1.JPG"
                         alt="Mental health support session"
                       />
