@@ -23,31 +23,31 @@ export const Donate1 = () => {
                     type="button"
                     data-price-id={0}
                     className="give-donation-level-btn give-btn"
-                    value={5}
+                    value={500}
                     data-default={0}
                   >
                     {" "}
-                    $5{" "}
+                    Rs. 500{" "}
                   </button>
                   <button
                     type="button"
                     data-price-id={0}
                     className="give-donation-level-btn give-btn"
-                    value={10}
+                    value={1000}
                     data-default={0}
                   >
                     {" "}
-                    $10{" "}
+                    Rs. 1,000{" "}
                   </button>{" "}
                   <button
                     type="button"
                     data-price-id={0}
                     className="give-donation-level-btn give-btn"
-                    value={100}
+                    value={5000}
                     data-default={0}
                   >
                     {" "}
-                    $100
+                    Rs. 5,000
                   </button>{" "}
                   <button
                     type="button"

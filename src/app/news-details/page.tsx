@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import BlogSidebar from "@/components/BlogSidebar";
 import PageBanner from "@/components/PageBanner";
 import DanboxLayout from "@/layout/DanboxLayout";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "News Details",
+};
 
 const CausesPage = () => {
   return (
@@ -168,7 +173,7 @@ const CausesPage = () => {
                           sizes="100vw"
                           style={{ height: "140px", width: "140px" }}
                           src="/assets/img/news/author_img2.jpg"
-                          alt="img"
+                          alt="Rosalina Kelian profile photo"
                         />
                       </div>
                       <div className="author-info-comment">
@@ -200,7 +205,7 @@ const CausesPage = () => {
                           sizes="100vw"
                           style={{ height: "140px", width: "140px" }}
                           src="/assets/img/news/author_img3.jpg"
-                          alt="img"
+                          alt="Arista Williamson profile photo"
                         />
                       </div>
                       <div className="author-info-comment">
@@ -233,7 +238,7 @@ const CausesPage = () => {
                               sizes="100vw"
                               style={{ height: "140px", width: "140px" }}
                               src="/assets/img/news/author_img4.jpg"
-                              alt="img"
+                              alt="Salman Ahmed profile photo"
                             />
                           </div>
                           <div className="author-info-comment">

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 // ─────────────────────────────────────────────
 // LEADERSHIP  (1 center → 2 center below)
@@ -62,9 +61,6 @@ const communityLeadsData = [
 { name: "Kamran Qurban",   role: "Lead Climate Action GB",     image: "/assets/img/Community Leads/Climate Action/climate action lead gb/Kamran Qurban.png",  linkedin: "#" },
 { name: "Saqlain Ahmed",   role: "Lead Climate Action Chitral",     image: "/assets/img/Climate Action/Lead Climate Action lead chitral Project/Saqlain Ahmed.png",  linkedin: "#" },
 { name: "Naghma Hamid",   role: "Co Lead Climate Action Chitral",     image: "/assets/img/Community Leads/Climate Action/Co-lead Climate Action chitral/Naghma Hamid.png",  linkedin: "https://www.linkedin.com/in/naghma-hamid-111madaklasht" },
-{ name: "Aleena Yousuf",   role: "Lead Bayan e Yaran",     image: "/assets/img/Chitral Wing/TBD.png",  linkedin: "https://www.linkedin.com/in/aleenayousuf44?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-{ name: "TBD",   role: "Lead Archival Project",     image: "/assets/img/Chitral Wing/TBD.png",  linkedin: "#" },
-{ name: "TBD",   role: "Co Lead Archival Project",     image: "/assets/img/Chitral Wing/TBD.png",  linkedin: "#" },
 ];
 
 // ─────────────────────────────────────────────
@@ -114,11 +110,9 @@ const CircleCard = ({
 
       {/* Text + LinkedIn */}
       <div className="text-center mt-2">
-        <h5 className="mb-0" style={{ fontWeight: 600, fontSize: size === "lg" ? 17 : 15 }}>
-          <Link href="/team-details" style={{ color: "#1a1a1a", textDecoration: "none" }}>
-            {name}
-          </Link>
-        </h5>
+        <h4 className="mb-0" style={{ fontWeight: 600, fontSize: size === "lg" ? 17 : 15, color: "#1a1a1a" }}>
+          {name}
+        </h4>
 
         {showRole && role && (
           <p className="mb-0 mt-1" style={{ fontSize: 13, color: "#666" }}>
@@ -158,7 +152,7 @@ export const Volunter = () => {
         </div>
 
         {/* ── LEADERSHIP ── */}
-   
+        <h3 className="text-center fw-bold mb-4">Leadership</h3>
         <div className="d-flex justify-content-center gap-5 flex-wrap mb-5">
           <CircleCard {...leader2} size="lg" />
           <CircleCard {...leader3} size="lg" />
@@ -177,47 +171,6 @@ export const Volunter = () => {
         </div>
 
         {/* ── COMMUNITY LEADS ── */}
-        <h3 className="text-center fw-bold mb-4 mt-5">Community Leads</h3>
-        <div className="row g-4 justify-content-center">
-          {communityLeadsData.map((m, i) => (
-            <div key={i} className="col-6 col-sm-4 col-md-3 d-flex justify-content-center">
-              <CircleCard {...m} showRole={true} size="sm" />
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
-  );
-};
-
-// ─────────────────────────────────────────────
-// VolunteersPage
-// ─────────────────────────────────────────────
-export const VolunteersPage = () => {
-  const [leader1, leader2, leader3] = leadershipData;
-
-  return (
-    <section className="volunter-section fix section-padding">
-      <div className="container">
-
-        <div className="d-flex justify-content-center mb-5">
-          <CircleCard {...leader1} size="lg" />
-        </div>
-        <div className="d-flex justify-content-center gap-5 flex-wrap mb-5">
-          <CircleCard {...leader2} size="lg" />
-          <CircleCard {...leader3} size="lg" />
-        </div>
-
-        <h3 className="text-center fw-bold mb-4 mt-5">Core Team</h3>
-        <div className="row g-4 justify-content-center mb-5">
-          {coreTeamData.map((m, i) => (
-            <div key={i} className="col-6 col-sm-4 col-md-3 d-flex justify-content-center">
-              <CircleCard {...m} showRole={false} size="md" />
-            </div>
-          ))}
-        </div>
-
         <h3 className="text-center fw-bold mb-4 mt-5">Community Leads</h3>
         <div className="row g-4 justify-content-center">
           {communityLeadsData.map((m, i) => (

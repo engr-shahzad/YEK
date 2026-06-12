@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { CausesTab } from "@/components/Causes";
+import { Cta1 } from "@/components/Cta";
 import PageBanner from "@/components/PageBanner";
-import { Volunter} from "@/components/Volunter";
 import DanboxLayout from "@/layout/DanboxLayout";
 
 export const metadata: Metadata = {
-  title: "Our Team",
+  title: "Our Projects",
 };
 
 const CausesPage = () => {
   return (
     <DanboxLayout>
-      {/* <PageBanner pageName="Volunteer" pageTitle="Our Volunteer" /> */}
-      <Volunter />
+
+      <CausesTab />
     </DanboxLayout>
   );
 };

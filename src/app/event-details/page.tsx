@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 import DanboxLayout from "@/layout/DanboxLayout";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Event Details",
+};
 
 const CausesPage = () => {
   return (
@@ -66,10 +71,10 @@ const CausesPage = () => {
                   </p>
                   <div className="row">
                     <div className="col-md-6 col-12">
-                      <img src="assets/img/event/eventd1.jpg" alt="img" />
+                      <img src="assets/img/event/eventd1.jpg" alt="Event activity photo one" />
                     </div>
                     <div className="col-md-6 col-12">
-                      <img src="assets/img/event/eventd2.jpg" alt="img" />
+                      <img src="assets/img/event/eventd2.jpg" alt="Event activity photo two" />
                     </div>
                   </div>
                 </div>

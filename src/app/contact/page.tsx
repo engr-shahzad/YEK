@@ -1,5 +1,6 @@
 "use client";
 
+import PageBanner from "@/components/PageBanner";
 import DanboxLayout from "@/layout/DanboxLayout";
 import { useState } from "react";
 
@@ -49,18 +50,49 @@ const ContactPage = () => {
 
   return (
     <DanboxLayout>
-      <section className="contact-section-2 fix section-padding pt-0">
+      <PageBanner pageName="Contact" />
+      <section className="contact-section-2 fix section-padding">
         <div className="container">
-          <div className="main-contact-form-items">
-            <div className="section-title text-center">
-              <span className="sub-title color-2 wow fadeInUp">
-                <i className="fal fa-pen" />
-              </span>
-              <h2 className="mt-char-animation">Get In Touch</h2>
+          <div className="row g-5 mb-5 justify-content-center">
+            <div className="col-lg-4">
+              <div className="d-flex flex-column gap-4 h-100 justify-content-center">
+                <div className="contact-info-card">
+                  <div className="icon">
+                    <i className="fal fa-map-marker-alt" />
+                  </div>
+                  <h6>Garamchashma, District Lower Chitral</h6>
+                </div>
+                <div className="contact-info-card">
+                  <div className="icon color-2">
+                    <i className="fal fa-envelope" />
+                  </div>
+                  <h6>
+                    <a href="mailto:yaranekhairngo@gmail.com" className="link">
+                      yaranekhairngo@gmail.com
+                    </a>
+                  </h6>
+                </div>
+                <div className="contact-info-card">
+                  <div className="icon color-3">
+                    <i className="fal fa-phone" />
+                  </div>
+                  <h6>
+                    <a href="tel:03359834070">03359834070</a>
+                  </h6>
+                </div>
+              </div>
             </div>
-            <form onSubmit={handleSubmit} className="mt-4 mt-md-0">
-              <div className="row g-4">
-                <div className="col-lg-6">
+            <div className="col-lg-8">
+              <div className="main-contact-form-items">
+                <div className="section-title text-center">
+                  <span className="sub-title color-2 wow fadeInUp">
+                    <i className="fal fa-pen" />
+                  </span>
+                  <h2 className="mt-char-animation">Get In Touch</h2>
+                </div>
+                <form onSubmit={handleSubmit} className="mt-4 mt-md-0">
+                  <div className="row g-4">
+                    <div className="col-lg-6">
                   <div className="form-clt">
                     <input
                       type="text"
@@ -147,6 +179,8 @@ const ContactPage = () => {
                 </div>
               </div>
             </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>

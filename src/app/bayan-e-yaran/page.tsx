@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import DanboxLayout from "@/layout/DanboxLayout";
+import PageBanner from "@/components/PageBanner";
 
 
 // ─────────────────────────────────────────────
@@ -193,6 +194,7 @@ const NewsletterPage = () => {
 
   return (
     <DanboxLayout>
+      <PageBanner pageName="Bayan e Yaran" />
       <style>{`
         @keyframes nl-spin { to { transform: rotate(360deg); } }
         @keyframes nl-fadein { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
@@ -391,6 +393,25 @@ const NewsletterPage = () => {
           width: 100%;
         }
       `}</style>
+
+      <section className="section-padding pb-0">
+        <div className="container">
+          <div className="section-title text-center">
+            <span className="sub-title color-2 wow fadeInUp">
+              <i className="far fa-heart" />
+              Our Newsletter
+            </span>
+            <h2 className="mt-char-animation">What is Bayan e Yaran?</h2>
+          </div>
+          <p className="text-center" style={{ maxWidth: 720, margin: "0 auto" }}>
+            Bayan e Yaran ("Voice of Friends") is Yaran e Khair&apos;s community newsletter,
+            sharing updates from our Bazm-e-Yaran sessions, programme highlights, and stories
+            from the communities we work with across Lower Chitral, Upper Chitral, and Garam
+            Chashma. Browse our latest issue below — new editions are added here as they are
+            published.
+          </p>
+        </div>
+      </section>
 
       <section className="section-padding" style={{ background: "#f7fbf8" }}>
         <div className="container">

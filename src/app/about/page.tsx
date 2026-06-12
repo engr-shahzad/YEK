@@ -1,18 +1,22 @@
-import { About1, About2 } from "@/components/About";
-import { CounterSection1 } from "@/components/CounterSection";
-import { Cta2, Cta5 } from "@/components/Cta";
-import { Gallery1 } from "@/components/Gallery";
+import type { Metadata } from "next";
+import { About1, AboutStory } from "@/components/About";
+import { Cta5 } from "@/components/Cta";
 import PageBanner from "@/components/PageBanner";
 import { Team1 } from "@/components/Team";
 import DanboxLayout from "@/layout/DanboxLayout";
 
+export const metadata: Metadata = {
+  title: "About Us",
+};
+
 const AboutPage = () => {
   return (
     <DanboxLayout>
-      {/* <PageBanner pageName="About Us" /> */}
+      <PageBanner pageName="About Us" />
       <About1 />
+      <AboutStory />
       <Cta5 />
-      
+
       <Team1 />
     </DanboxLayout>
   );

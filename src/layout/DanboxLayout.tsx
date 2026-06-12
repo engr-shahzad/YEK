@@ -7,23 +7,15 @@ import Footer from "./Footer";
 import Header from "./Header";
 import ScrollTop from "./ScrollTop";
 
-const DanboxLayout = ({
-  children,
-  header = 3,
-  footer = 1,
-}: {
-  children?: ReactNode;
-  header?: number;
-  footer?: number;
-}) => {
+const DanboxLayout = ({ children }: { children?: ReactNode }) => {
   scrollAnimation();
   return (
     <Fragment>
       <VideoPopup />
       <ImageView />
-      <Header header={header} />
+      <Header />
       {children}
-      <Footer footer={footer} />
+      <Footer />
       <ScrollTop />
     </Fragment>
   );

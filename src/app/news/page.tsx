@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import BlogSidebar from "@/components/BlogSidebar";
 import PageBanner from "@/components/PageBanner";
 import DanboxLayout from "@/layout/DanboxLayout";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "News",
+};
 
 const CausesPage = () => {
   interface BlogPost {

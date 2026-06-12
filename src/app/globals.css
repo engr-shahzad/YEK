@@ -69,3 +69,54 @@ img.mfp-img {
   height: 100%;
   max-height: 500px;
 }
+
+/* Active nav link state */
+.header-main .main-menu ul li a.active,
+.mean-nav ul li a.active {
+  color: var(--theme-2) !important;
+}
+
+/* Contact page: info cards */
+.contact-info-card {
+  background-color: var(--bg);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+.contact-info-card .icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: var(--theme);
+  color: var(--white);
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+.contact-info-card .icon.color-2 {
+  background-color: var(--theme-2);
+}
+.contact-info-card .icon.color-3 {
+  background-color: var(--theme-3);
+  color: var(--header);
+}
+.contact-info-card h6 {
+  color: var(--header);
+  font-weight: 500;
+  margin: 0;
+}
+.contact-info-card h6 a {
+  color: var(--header);
+  transition: color 0.3s ease-in-out;
+}
+.contact-info-card h6 a:hover {
+  color: var(--theme-2);
+}
+
+/* Contact page: make form inputs visibly bordered */
+.main-contact-form-items .form-clt input,
+.main-contact-form-items .form-clt textarea {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}

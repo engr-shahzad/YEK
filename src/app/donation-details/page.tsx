@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 import DanboxLayout from "@/layout/DanboxLayout";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Donate",
+};
 
 const CausesPage = () => {
   return (
@@ -18,7 +23,7 @@ const CausesPage = () => {
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
                     src="/assets/img/donation/donation_bg.jpg"
-                    alt="img"
+                    alt="Somalian people in need of clean water"
                   />
                 </div>
                 <div className="details-content style-2">

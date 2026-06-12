@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 15 \"http://localhost:3000/\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 30 \"http://localhost:3000/\")",
+      "Bash(curl -s http://localhost:3000/contact)",
+      "Bash(curl -s http://localhost:3000/ -o /tmp/home.html)",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s http://localhost:3000/ -o ./home_debug.html)",
+      "Bash(npx playwright *)",
+      "Bash(npx --yes playwright screenshot --viewport-size=1440,900 --wait-for-timeout=2000 http://localhost:3000/ hero_full.png)",
+      "Bash(npx --yes playwright screenshot --viewport-size=1100,800 --wait-for-timeout=2000 http://localhost:3000/ hero_1100.png)",
+      "Bash(git mv *)",
+      "Bash(node -e \"const d=require\\('./src/data/causes.json'\\); console.log\\(d[0].slug\\)\")",
+      "Bash(curl -s -o /dev/null -w \"projects: %{http_code}\\\\n\" http://localhost:3000/projects)",
+      "Bash(curl -s -o /dev/null -w \"project-details: %{http_code}\\\\n\" \"http://localhost:3000/project-details/first-aid-emergency-relief\")",
+      "Bash(curl -s -o /dev/null -w \"old-causes \\(should 404\\): %{http_code}\\\\n\" http://localhost:3000/causes)",
+      "Bash(curl -s -o /dev/null -w \"old-causes-details \\(should 404\\): %{http_code}\\\\n\" \"http://localhost:3000/causes-details/first-aid-emergency-relief\")"
+    ]
+  }
+}

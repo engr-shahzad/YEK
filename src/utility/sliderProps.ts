@@ -34,7 +34,8 @@ const animateElements = (swiper: SwiperRef): void => {
     }
   });
 
-  const activeSlideEl = swiper.slides[swiper.activeIndex] as HTMLElement;
+  const activeSlideEl = swiper.slides[swiper.activeIndex] as HTMLElement | undefined;
+  if (!activeSlideEl) return;
   const animatedElements = activeSlideEl.querySelectorAll("[data-animation]");
 
   animatedElements.forEach((element) => {
@@ -54,14 +55,11 @@ const animateElements = (swiper: SwiperRef): void => {
 
 export const sliderProps = {
   heroSlider1: {
-    loop: true,
+    loop: false,
     slidesPerView: 1,
     effect: "fade",
     speed: 3000,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
+    autoplay: false as const,
     pagination: {
       el: ".dot",
       clickable: true,

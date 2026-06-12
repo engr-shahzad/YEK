@@ -24,7 +24,10 @@ const chelsea_market = Chelsea_Market({
 });
 
 export const metadata: Metadata = {
-  title: "Yaran e Khair",
+  title: {
+    default: "Yaran e Khair",
+    template: "%s | Yaran e Khair",
+  },
   description: "Yaran e Khair",
   icons: {
     icon: "/YEK.ico",

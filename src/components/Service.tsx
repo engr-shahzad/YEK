@@ -7,6 +7,7 @@ export const Service1 = () => {
     title: string;
     description: string;
     delay: string;
+    slug: string;
   }[] = [
     {
       img: "/assets/img/service/BZY.JPG",
@@ -14,6 +15,7 @@ export const Service1 = () => {
       description:
         "Interactive sessions in Garam Chashma combining mental health support, career counseling, self-improvement activities, and democratic leadership programs to empower students.",
       delay: ".3s",
+      slug: "bazm-e-yaran-comprehensive-sessions",
     },
     {
       img: "/assets/img/service/SCH.png",
@@ -21,6 +23,7 @@ export const Service1 = () => {
       description:
         "Providing full and partial scholarships covering fees, textbooks, transportation, and housing to students from remote valleys, ensuring quality education for all.",
       delay: ".5s",
+      slug: "education-for-everyone-scholarships",
     },
     {
       img: "/assets/img/service/CC.jpeg",
@@ -28,6 +31,7 @@ export const Service1 = () => {
       description:
         "Guiding students through diverse career paths and scholarship opportunities with peer-led mentorship, helping them make informed decisions about their futures.",
       delay: ".7s",
+      slug: "career-counseling-student-facilitation",
     },
     {
       img: "/assets/img/service/FL.jpg",
@@ -35,6 +39,7 @@ export const Service1 = () => {
       description:
         "Rapid response support for flood-affected communities, providing immediate first aid, food supplies, clothing, and essential household items to vulnerable families.",
       delay: ".3s",
+      slug: "first-aid-emergency-relief",
     },
   ];
   return (
@@ -70,7 +75,7 @@ export const Service1 = () => {
                 </div>
                 <div className="service-content">
                   <h3>
-                    <Link href="/about">{item.title}</Link>
+                    <Link href={`/project-details/${item.slug}`}>{item.title}</Link>
                   </h3>
                   <p>{item.description}</p>
                 </div>
