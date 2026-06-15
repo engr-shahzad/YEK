@@ -69,7 +69,7 @@ const navLinks: { href: string; label: string; plainCase?: boolean }[] = [
   { href: "/about", label: "About Us" },
   { href: "/projects", label: "Our Projects" },
   { href: "/team", label: "Team" },
-  { href: "/news-grid", label: "Blog" },
+  { href: "/news", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 

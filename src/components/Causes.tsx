@@ -1,40 +1,7 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { Nav, Tab } from "react-bootstrap";
-import causesData from "@/data/causes.json";
-
-// ─── Types ───────────────────────────────────────────────────────────────────
-
-type CauseList = {
-  category: string;
-  image: string;
-  title: string;
-  progress: number;
-  raised: number;
-  goal: number;
-  author: string;
-  delay: string;
-};
-
-type CauseFull = {
-  id: number;
-  slug: string;
-  list: CauseList;
-  details: {
-    category: string;
-    bannerImage: string;
-    title: string;
-    progress: number;
-    raised: number;
-    goal: number;
-    description: string;
-    fullContent: string[];
-    goals: string[];
-    contentImages: string[];
-    sidebarGallery: string[];
-  };
-};
+import type { ProjectRow } from "@/types/project";
 
 // ─── Shared Card ─────────────────────────────────────────────────────────────
 
@@ -43,17 +10,11 @@ const CausesCard = ({
   delay,
   image,
   title,
-  progress,
-  raised,
-  goal,
 }: {
   slug: string;
   delay: string;
   image: string;
   title: string;
-  progress: number;
-  raised: number;
-  goal: number;
 }) => (
   <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay={delay}>
     <div className="causes-box-items box-shadow">
@@ -65,16 +26,14 @@ const CausesCard = ({
         <h4>
           <Link href={`/project-details/${slug}`}>{title}</Link>
         </h4>
-  
- 
       </div>
     </div>
   </div>
 );
 
-export const CausesTab = () => {
-  const allCauses = causesData as CauseFull[];
+const DELAYS = [".3s", ".5s", ".7s", ".9s", "1.1s"];
 
+export const CausesTab = ({ projects }: { projects: ProjectRow[] }) => {
   const tabs = [
     { key: "all", label: "All Categories", delay: ".3s" },
     { key: "Education", label: "Education", delay: ".5s" },
@@ -84,9 +43,7 @@ export const CausesTab = () => {
   ];
 
   const getFiltered = (key: string) =>
-    key === "all"
-      ? allCauses
-      : allCauses.filter((c) => c.list.category === key);
+    key === "all" ? projects : projects.filter((p) => p.category === key);
 
   return (
     <section className="causes-section fix section-padding fix">
@@ -114,56 +71,18 @@ export const CausesTab = () => {
             {tabs.map((tab) => (
               <Tab.Pane key={tab.key} eventKey={tab.key} className="tab-pane fade">
                 <div className="row">
-                  {getFiltered(tab.key).map((cause) => (
+                  {getFiltered(tab.key).map((project, i) => (
                     <CausesCard
-                      key={cause.id}
-                      slug={cause.slug}
-                      delay={cause.list.delay}
-                      image={cause.list.image}
-                      title={cause.list.title}
-                      progress={cause.list.progress}
-                      raised={cause.list.raised}
-                      goal={cause.list.goal}
+                      key={project.id}
+                      slug={project.slug}
+                      delay={DELAYS[i % DELAYS.length]}
+                      image={project.card_image}
+                      title={project.title}
                     />
                   ))}
                 </div>
               </Tab.Pane>
             ))}
-
-            {/* <div className="page-nav-wrap mt-5 text-center">
-              <ul>
-                <li>
-                  <a className="page-numbers" href="#">
-                    <i className="fal fa-long-arrow-left" />
-                  </a>
-                </li>
-                <li>
-                  <a className="page-numbers" href="#">
-                    01
-                  </a>
-                </li>
-                <li>
-                  <a className="page-numbers" href="#">
-                    02
-                  </a>
-                </li>
-                <li>
-                  <a className="page-numbers" href="#">
-                    ..
-                  </a>
-                </li>
-                <li>
-                  <a className="page-numbers" href="#">
-                    10
-                  </a>
-                </li>
-                <li>
-                  <a className="page-numbers" href="#">
-                    <i className="fal fa-long-arrow-right" />
-                  </a>
-                </li>
-              </ul>
-            </div> */}
           </Tab.Content>
         </Tab.Container>
       </div>

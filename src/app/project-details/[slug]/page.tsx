@@ -4,45 +4,15 @@ import DanboxLayout from "@/layout/DanboxLayout";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import causesData from "@/data/causes.json";
-
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-type CauseFull = {
-  id: number;
-  slug: string;
-  list: {
-    category: string;
-    image: string;
-    title: string;
-    progress: number;
-    raised: number;
-    goal: number;
-    author: string;
-    delay: string;
-  };
-  details: {
-    category: string;
-    bannerImage: string;
-    title: string;
-    progress: number;
-    raised: number;
-    goal: number;
-    description: string;
-    fullContent: string[];
-    goalsIntro: string;
-    goals: string[];
-    contentImages: string[];
-    sidebarGallery: string[];
-  };
-};
+import { createClient } from "@/lib/supabase/public";
+import type { ProjectRow } from "@/types/project";
 
 // ─── Static Params ────────────────────────────────────────────────────────────
 
 export async function generateStaticParams() {
-  return (causesData as CauseFull[]).map((cause) => ({
-    slug: cause.slug,
-  }));
+  const supabase = createClient();
+  const { data } = await supabase.from("projects").select("slug");
+  return (data ?? []).map((cause) => ({ slug: cause.slug }));
 }
 
 export async function generateMetadata({
@@ -51,10 +21,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const cause = (causesData as CauseFull[]).find((c) => c.slug === slug);
+  const supabase = createClient();
+  const { data: cause } = await supabase
+    .from("projects")
+    .select("title")
+    .eq("slug", slug)
+    .single();
 
   return {
-    title: cause ? cause.details.title : "Project Not Found",
+    title: cause ? cause.title : "Project Not Found",
   };
 }
 
@@ -67,15 +42,23 @@ const CausesDetailsPage = async ({
 }) => {
   const { slug } = await params;
 
-  const cause = (causesData as CauseFull[]).find((c) => c.slug === slug);
+  const supabase = createClient();
+  const { data: cause } = await supabase
+    .from("projects")
+    .select("*")
+    .eq("slug", slug)
+    .single();
 
   if (!cause) notFound();
 
-  const { details } = cause;
+  const details = cause as ProjectRow;
 
-  const otherCauses = (causesData as CauseFull[]).filter(
-    (c) => c.slug !== cause.slug
-  );
+  const { data: otherCauses } = await supabase
+    .from("projects")
+    .select("id, slug, title")
+    .neq("slug", slug)
+    .order("display_order", { ascending: true })
+    .limit(5);
 
   return (
     <DanboxLayout>
@@ -95,7 +78,7 @@ const CausesDetailsPage = async ({
                       height={0}
                       sizes="100vw"
                       style={{ width: "100%", height: "auto" }}
-                      src={details.bannerImage}
+                      src={details.banner_image}
                       alt={details.title}
                     />
                   </div>
@@ -110,14 +93,14 @@ const CausesDetailsPage = async ({
 
                   {/* Full Content */}
                   <div className="causes-contents">
-                    {details.fullContent.map((paragraph, i) => (
+                    {details.full_content.map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
                     ))}
 
                     {/* Content Images */}
-                    {details.contentImages.length > 0 && (
+                    {details.content_images.length > 0 && (
                       <div className="row g-4">
-                        {details.contentImages.map((img, i) => (
+                        {details.content_images.map((img, i) => (
                           <div className="col-md-6" key={i}>
                             <Image
                               width={0}
@@ -135,7 +118,7 @@ const CausesDetailsPage = async ({
                     {/* Goals */}
                     <h3>Our Goals</h3>
                     <p>
-                      {details.goalsIntro} If you can only give{" "}
+                      {details.goals_intro} If you can only give{" "}
                       <Link href="/donation-details">Rs. 500</Link> just this one time, it
                       will still make a difference.
                     </p>
@@ -159,12 +142,12 @@ const CausesDetailsPage = async ({
                       <h4>Gallery</h4>
                     </div>
                     <div className="causue-gallery-wid">
-                      {details.sidebarGallery.map((img, i) => (
+                      {details.sidebar_gallery.map((img, i) => (
                         <a
                           key={i}
                           href={img}
                           className={`single-cause-img img-popup bg-cover${
-                            i === details.sidebarGallery.length - 1 ? " mb-0" : ""
+                            i === details.sidebar_gallery.length - 1 ? " mb-0" : ""
                           }`}
                           style={{ backgroundImage: `url("${img}")` }}
                         />
@@ -173,16 +156,16 @@ const CausesDetailsPage = async ({
                   </div>
 
                   {/* Related Projects */}
-                  {otherCauses.length > 0 && (
+                  {otherCauses && otherCauses.length > 0 && (
                     <div className="single-sidebar-widgets">
                       <div className="widget-title">
                         <h4>Related Projects</h4>
                       </div>
                       <ul>
-                        {otherCauses.slice(0, 5).map((c) => (
+                        {otherCauses.map((c) => (
                           <li key={c.id}>
                             <Link href={`/project-details/${c.slug}`}>
-                              {c.list.title}
+                              {c.title}
                             </Link>
                           </li>
                         ))}

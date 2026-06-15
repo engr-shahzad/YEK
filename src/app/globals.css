@@ -323,4 +323,9 @@ img {
 .main-contact-form-items .form-clt textarea {
   border: 1px solid var(--border);
   border-radius: 6px;
+  color: var(--header);
+}
+.main-contact-form-items .form-clt input:focus,
+.main-contact-form-items .form-clt textarea:focus {
+  color: var(--header);
 }

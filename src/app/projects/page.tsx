@@ -2,16 +2,24 @@ import type { Metadata } from "next";
 import { CausesTab } from "@/components/Causes";
 import PageBanner from "@/components/PageBanner";
 import DanboxLayout from "@/layout/DanboxLayout";
+import { createClient } from "@/lib/supabase/public";
+import type { ProjectRow } from "@/types/project";
 
 export const metadata: Metadata = {
   title: "Our Projects",
 };
 
-const CausesPage = () => {
+const CausesPage = async () => {
+  const supabase = createClient();
+  const { data: projects } = await supabase
+    .from("projects")
+    .select("*")
+    .order("display_order", { ascending: true });
+
   return (
     <DanboxLayout>
       <PageBanner pageName="Our Projects" />
-      <CausesTab />
+      <CausesTab projects={(projects as ProjectRow[]) ?? []} />
     </DanboxLayout>
   );
 };
