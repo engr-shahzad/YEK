@@ -19,7 +19,7 @@ const Faq = () => {
       key: "faq2",
       question: "What areas does Yaran e Khair serve?",
       answer:
-        "We primarily work in Lower Chitral, Upper Chitral, and remote valleys including Garam Chashma and Shah Saleem. Our programs focus on underserved communities that lack access to quality education, healthcare, and emergency support.",
+        "We primarily work in Lower Chitral, Upper Chitral,Gilgit and remote valleys including Garam Chashma and Shah Saleem. Our programs focus on underserved communities that lack access to quality education, healthcare, and emergency support.",
       delay: ".5s",
     },
     {

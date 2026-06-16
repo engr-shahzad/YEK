@@ -68,7 +68,7 @@ const navLinks: { href: string; label: string; plainCase?: boolean }[] = [
   { href: "/bayan-e-yaran", label: "Bayan e Yaran", plainCase: true },
   { href: "/about", label: "About Us" },
   { href: "/projects", label: "Our Projects" },
-  { href: "/team", label: "Team" },
+  { href: "/team", label: "Our Team" },
   { href: "/news", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
